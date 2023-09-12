@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         table{
-            width: 400px;
+            width: 450px;
         }
         .t1{
             width: 450px;
@@ -33,24 +33,21 @@
             width: 200px;
         }
 
-        input[type="checkbox"]{
-            float: left;
-            text-align: justify;
-        }
-
-        .checkbox {
-            display: flex;
-            justify-content: flex-start;
-        }
-
         .a{
             display: flex;
             font-weight: 200;
         }
 
-        button{
-            width: 100px;
-            height: 50px;
+        #button1 {
+            margin-left: 25%;
+        }
+
+        #left{
+            text-align: left;
+        }
+
+        td{
+            text-align: center;
         }
     </style>
 </head>
@@ -78,14 +75,9 @@
         </tr>
 
         <tr> 
-            <td> <label> Choose Gender </label> </td>
-            <td> 
-                <div class="radio-group">
-                <label for = "Male" > Male </label> 
-                <input type = "radio"  id = "Male"  name="gender"  />  </br> </br>
-                <label for = "Female"> Female </label>
-                <input type = "radio" id = "Female"   name="gender"  /> </td>
-            </div>
+                <td><b>Gender:</b></td>
+                <td id="left"><input type="checkbox"> Male 
+                <input type="checkbox"> Female </td>
         </tr>
         
         <tr>
@@ -118,34 +110,17 @@
         </tr>
 
         <tr>
-            <td> <label for = "lang" > Languages Known </label></td>
-            <td> <label for = "English"> English </label>
-            <input type = "checkbox" id = "English"  value = "English" />
-            <label for = "Hindi"> Hindi </label>
-            <input type = "checkbox" id = "Hindi"   value = "Hindi"  /> 
-            <label for = "Kannada"> Kannada </label>
-            <input type = "checkbox" id = "Kannada"  value = "Kannada" />
-            <label for = "Telugu"> Telugu </label>
-            <input type = "checkbox" id = "Telugu"   value = "Telugu"  />        
-            </td>
-        </tr>
-    </table>
-
-    <table border="1" class="t1">
-        <tr>
-            <td align="left">
-                    <input type="checkbox" class ="a" >
-                    <label for="checkbox">Hereby I declare all the given details are true</label> 
-            </td>
-        </tr>
-
-        <tr>
-            <td align="right">
-                Login to Ethnus Website
-            </td>
-        </tr>
-    </table>
-
-    <button type="submit"> Register </button>
+            <td><b>Languages known</b></td>
+            <td id="left"><input type="checkbox"> English 
+              <input type="checkbox"> Kannada
+              <input type="checkbox"> Hindi 
+              <input type="checkbox"> Telugu </td> 
+          </tr>
+          <tr>
+            <td colspan="2"><input type="checkbox" > Hereby I declare all the given details are true</td>
+          </tr>
+          <tr><td colspan="2">Login to <a link="https://codemithra.com/">Ethnus</a> website</td></tr>
+        </table>
+        <p></p><button id="button1">Register</button>
 </body>
 </html>
